@@ -5,7 +5,7 @@ lgtv is a shell script utilizing websocat to communicate with the WebSocket of L
 ## Requirements
 
 * [websocat](https://github.com/vi/websocat)
-* `wakeonlan` (optional, to wake up tv)
+* `wakeonlan` (optional)
 
 ## Configuration file
 
