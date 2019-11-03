@@ -7,25 +7,6 @@ lgtv is a shell script utilizing websocat to communicate with the WebSocket of L
 * [websocat](https://github.com/vi/websocat)
 * `wakeonlan` (optional)
 
-## Configuration file
-
-Default configuration file path:
-```
-~/.config/lgtv/config
-```
-
-Example config:
-```
-IP="192.168.0.12"
-MAC="12:34:56:78:90:12"
-KEY="abcdefghijklmnopqrstuvwxyz123456"
-```
-
-Generate a config file with:
-```
-lgtv auth <ip>
-```
-
 ## Usage
 
 ```
@@ -112,4 +93,23 @@ Request examples:
   lgtv tv getExternalInputList
   lgtv tv openChannel 52
   lgtv tv switchInput HDMI_2
+```
+
+## Configuration file
+
+Default configuration file path:
+```
+~/.config/lgtv/config
+```
+
+Example config:
+```
+IP="192.168.0.12"
+MAC="12:34:56:78:90:12"
+KEY="abcdefghijklmnopqrstuvwxyz123456"
+```
+
+Generate a config file with:
+```
+lgtv auth <ip>
 ```
