@@ -201,6 +201,16 @@ lgtvR() {
 
 ################################################################################
 
+command -v timeout >/dev/null 2>&1 || {
+  printf "Error: timeout required but not installed. Aborting.\n"
+  exit 1
+}
+
+command -v grep >/dev/null 2>&1 || {
+  printf "Error: grep required but not installed. Aborting.\n"
+  exit 1
+}
+
 command -v websocat >/dev/null 2>&1 || {
   printf "Error: websocat required but not installed. Aborting.\n"
   exit 1
