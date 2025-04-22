@@ -322,6 +322,9 @@ Simple request:
 Request with payload:
   lgtv ssap://tv/openChannel {\"channelNumber\":\"2\"}
 
+Retrieve system settings:
+  lgtv ssap://settings/getSystemSettings '{"category": "option", "keys":["zipcode"]}'
+
 Request an input socket and send an input event:
   lgtv input "type:button\\nname:INFO\\n"
 
